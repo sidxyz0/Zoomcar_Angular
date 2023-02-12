@@ -1,0 +1,11 @@
+<div>
+    <div >
+        <input [(ngModel)]="phone" type="text" placeholder="phonenumber">
+        <div id="recaptcha-container"></div>
+        <button (click)="getOTP()">Get OTP</button>
+    </div>
+    <div *ngIf="showOTP">
+        <input [(ngModel)]="otp" type="password" placeholder="otp">
+        <button (click)="verifyOTP()">Verify OTP</button>
+    </div>
+</div>
